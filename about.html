@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Renasya</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <!-- Nav Logo -->
+            <div class="nav-logo" data-aos="fade-down">
+                <img src="assets/image/logo.png" alt="Logo">
+            </div>
+
+            <!-- Nav Links -->
+            <div class="nav-container">
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-delay="100"><a href="index.html">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-delay="200"><a href="about.html" class="active">About</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-delay="300"><a href="project.html">Project</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-delay="400"><a href="certification.html">Certification</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+
+            <!-- Nav Mobile Sidemenu -->
+            <div class="dropdown">
+                <i class="fa-solåid fa-xmark cancel" onclick="cancel()"></i>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="active">About</a>
+                    <a href="project.html">Project</a>
+                    <a href="certification.html">Certification</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- About Section -->
+        <section id="About" class="about">
+            <h2 class="section-title" data-aos="fade-up">About <span class="blue">Me</span></h2>
+
+            <!-- Typewrite -->
+            <div class="typewriter" data-aos="fade-right">
+                <span class="typewriter-text" id="about-typewriter"></span>
+                <label>|</label>
+            </div>
+
+            <!-- Profile -->
+            <div class="row">
+                <div class="about-img" data-aos="fade-right">
+                    <img src="assets/image/profile.jpg" alt="About Me" />
+                </div>
+                <div class="content" data-aos="fade-left">
+                    <h3>Informatics Student</h3>
+                    <p>
+                        Hello! I am Renasya Malkahaq, a fourth-semester student majoring in Informatics Engineering at Siliwangi University.
+                        With a strong foundation in programming, I aim to develop innovative solutions that optimize processes and improve user experience.
+                    </p>
+                    <p>
+                        My passion for continuous learning and dedication to excellence drive me to explore emerging technologies and deliver impactful projects.
+                        I believe in fostering collaboration and understanding unique challenges to create customized and effective technology solutions.
+                    </p>
+                    <div class="btn" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="assets/CV_Oliv.pdf" download class="outline-btn">Download CV</a>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Skill -->
+        <div class="skill">
+            <h2 data-aos="fade-up" data-aos-delay="100">Skills</h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="subtitle">Here are some of the skills</p>
+            <div class="skill-container">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <canvas id="chart1" 
+                        data-value="75" 
+                        data-label="HTML" 
+                        data-color="#A8E8E1">
+                    </canvas>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <canvas id="chart2" 
+                        data-value="60" 
+                        data-label="CSS" 
+                        data-color="#E89AC8">
+                    </canvas>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <canvas id="chart3" 
+                        data-value="50" 
+                        data-label="JavaScript" 
+                        data-color="#F4B183">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+
+            <!-- Reason -->
+            <div class="reason">
+                <h2 data-aos="fade-up" data-aos-delay="100">Why Hire Me?</h2>
+                <div class="reasons-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="reason-card">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h3>Financial Expert</h3>
+                        <p>With years of experience in financial analysis, I provide accurate insights to optimize business performance.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fa-solid fa-calculator"></i>
+                        <h3>Budgeting & Forecasting</h3>
+                        <p>Helping businesses create effective budgets and forecasts to ensure financial stability and growth.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fa-solid fa-balance-scale"></i>
+                        <h3>Regulatory Compliance</h3>
+                        <p>Ensuring all financial operations comply with industry regulations and tax laws.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial -->
+            <div class="testimonial">
+                <h2 data-aos="fade-up" data-aos-delay="100">What My Clients Say</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <p>"Renasya's expertise in financial analysis helped us reduce costs and improve profitability. Her insights were invaluable!"</p>
+                        <h4>James Anderson</h4>
+                        <span>CFO, GlobalTech Solutions</span>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <p>"Her budgeting and forecasting skills have given our company a clear financial direction. Highly recommended!"</p>
+                        <h4>Emily Roberts</h4>
+                        <span>Finance Manager, GreenCo Ltd.</span>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <p>"Renasya ensures compliance with all financial regulations. She has been a crucial asset to our company."</p>
+                        <h4>Michael Brown</h4>
+                        <span>CEO, BrightFuture Enterprises</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-copy">&copy; 2025 Renasya Services. All Rights Reserved.</p>
+        <div class="footer-container">
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Policy Links -->
+            <div class="footer-section">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-use.html">Terms of Use</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section footer-section-fit ">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:renasyamalkahaq@gmail.com">renasyamalkahaq@gmailcom</a></p>
+                <p>Phone: <a href="https://wa.me/6281223737239" target="_blank" rel="noopener noreferrer">+62 8122 3737 239</a></p>
+                <p>Address: Kota Tasikmalaya</p>
+            </div>
+
+            <!-- Contact Links -->
+            <div class="footer-section footer-section-fit">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="https://github.com/Renasyaa" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/renasya-malkahaq-3006462b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="mailto:renasyamalkahaq@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://x.com/renyourhearts" title="X"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/regardezmoyi" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/about.js"></script>
+</body>
+
+</html>

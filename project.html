@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Renasya | Projects</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <!-- Nav Logo -->
+            <div class="nav-logo" data-aos="fade-down">
+                <img src="assets/image/logo.png" alt="Logo">
+            </div>
+
+            <!-- Nav Links -->
+            <div class="nav-container">
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-delay="100"><a href="index.html">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-delay="200"><a href="about.html">About</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-delay="300"><a href="project.html" class="active">Project</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-delay="400"><a href="certification.html">Certification</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+
+            <!-- Nav Mobile Sidemenu -->
+            <div class="dropdown">
+                <i class="fa-solid fa-xßmark cancel" onclick="cancel()"></i>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="project.html" class="active">Project</a>
+                    <a href="certification.html">Certification</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Project Section -->
+        <section class="projects-section" id="project">
+            <h2 class="section-title" data-aos="fade-up">My <span class="blue">Projects</span></h2>
+
+            <!-- Typewriter -->
+            <div class="typewriter" data-aos="fade-right">
+                <span class="typewriter-text" id="project-typewriter"></span>
+                <label>|</label>
+            </div>
+
+            <!-- Filter Form -->
+            <div class="form-group filter-form">
+                <label for="sortYear">Sort by Year:</label>
+                <select id="sortYear">
+                    <option value="none">None</option>
+                    <option value="asc">Oldest to Newest</option>
+                    <option value="desc">Newest to Oldest</option>
+                </select>
+            </div>
+
+            <!-- Project List -->
+            <div class="showcase-container">
+                <!-- Project 1 -->
+                <div class="showcase-card" data-aos="fade-up" data-aos-delay="100" data-year="2023">
+                    <img src="assets/project/project-kalkulator1.jpg" alt="Project 1">
+                    <div class="showcase-content">
+                        <h3>Square Function Calculator</h3>
+                        <p>Short description of the project.</p>
+                        <span>2023</span>
+                    </div>
+                    <a href="https://renasyariehan.web.app/" 
+                    class="showcase-action" 
+                    target="_blank" 
+                    rel="noopener" 
+                    aria-label="Square Function Calculator" 
+                    title="View Calculator">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            
+                <!-- Project 2 -->
+                <div class="showcase-card" data-aos="fade-up" data-aos-delay="200" data-year="2024">
+                    <img src="assets/project/project-kalkulator.jpg" alt="Project 2">
+                    <div class="showcase-content">
+                        <h3>Sequence Calculator</h3>
+                        <p>Short description of the project.</p>
+                        <span>2024</span>
+                    </div>
+                    <a href="https://rovifauzan.github.io/Website-Deret/" 
+                    class="showcase-action" 
+                    target="_blank" 
+                    rel="noopener" 
+                    aria-label="Sequence Calculator" 
+                    title="View Calculator">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            
+                <!-- Project 3 -->
+                <div class="showcase-card" data-aos="fade-up" data-aos-delay="300" data-year="2024">
+                    <img src="assets/project/design-imk.png" alt="Project 3">
+                    <div class="showcase-content">
+                        <h3>WISP</h3>
+                        <p>Short description of the project.</p>
+                        <span>2024</span>
+                    </div>
+                    <a href="https://www.figma.com/proto/rativjMx2vMWzoVX9fqguZ/IMK-UTS?page-id=34%3A188&node-id=34-221&viewport=1599%2C215%2C0.42&t=s60lewuDieMoyZft-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=186%3A650" 
+                    class="showcase-action" 
+                    target="_blank" 
+                    rel="noopener" 
+                    aria-label="Prototype" 
+                    title="View Prototype">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="showcase-card" data-aos="fade-up" data-aos-delay="400" data-year="2024">
+                    <img src="assets/project/project-mockup.png" alt="Project 4">
+                    <div class="showcase-content">
+                        <h3>Makeing Beauty</h3>
+                        <p>Short description of the project.</p>
+                        <span>2024</span>
+                    </div>
+                    <a href="https://www.figma.com/proto/UNhjdsqxs08vvOFToFKs3I/coba?page-id=44%3A13&node-id=88-4&starting-point-node-id=88%3A4&t=QxMXCr9HKba6nSBd-1" 
+                    class="showcase-action" 
+                    target="_blank" 
+                    rel="noopener" 
+                    aria-label="Makeing Beauty" 
+                    title="View Prototype">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            
+                <!-- Project 5 -->
+                <div class="showcase-card" data-aos="fade-up" data-aos-delay="500" data-year="2024">
+                    <img src="assets/project/Project-imk-arkom.png" alt="Project 5">
+                    <div class="showcase-content">
+                        <h3>REVIVA</h3>
+                        <p>Short description of the project.</p>
+                        <span>2024</span>
+                    </div>
+                    <a href="https://www.figma.com/proto/ufD7UfloOChpbcyXGLS2qB/ARKOM---IMK-UAS?page-id=186%3A810&node-id=319-619&starting-point-node-id=319%3A619&t=ks379INilvSHJFMs-1" 
+                    class="showcase-action" 
+                    target="_blank" 
+                    rel="noopener" 
+                    aria-label="REVIVA" 
+                    title="View Prototype">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="showcase-card" data-aos="fade-up" data-aos-delay="600" data-year="2025">
+                    <img src="assets/image/project-2.jpg" alt="Project 6">
+                    <div class="showcase-content">
+                        <h3>Project Title 6</h3>
+                        <p>Short description of the project.</p>
+                        <span>2025</span>
+                    </div>
+                    <a href="https://www.figma.com/proto/ufD7UfloOChpbcyXGLS2qB/ARKOM---IMK-UAS?page-id=186%3A810&node-id=319-619&starting-point-node-id=319%3A619&t=ks379INilvSHJFMs-1" 
+                    class="showcase-action" 
+                    target="_blank" 
+                    rel="noopener" 
+                    aria-label="REVIVA" 
+                    title="View Prototype">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-copy">&copy; 2025 Renasya Services. All Rights Reserved.</p>
+        <div class="footer-container">
+    
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Policy Links -->
+            <div class="footer-section">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-use.html">Terms of Use</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section footer-section-fit ">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:renasyamalkahaq@gmail.com">renasyamalkahaq@gmailcom</a></p>
+                <p>Phone: <a href="https://wa.me/6281223737239" target="_blank" rel="noopener noreferrer">+62 8122 3737 239</a></p>
+                <p>Address: Kota Tasikmalaya</p>
+            </div>
+
+            <!-- Contact Link -->
+            <div class="footer-section footer-section-fit">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="https://github.com/Renasyaa" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/renasya-malkahaq-3006462b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="mailto:renasyamalkahaq@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://x.com/renyourhearts" title="X"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/regardezmoyi" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/projects.js"></script>
+</body>
+</html>
