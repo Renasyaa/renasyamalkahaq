@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$user = "root"; // Ganti sesuai dengan database Anda
-$password = ""; // Ganti dengan password database Anda
+$user = "root";
+$password = "";
 $database = "portfolio";
 
 $conn = new mysqli($host, $user, $password, $database);
