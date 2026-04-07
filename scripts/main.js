@@ -64,7 +64,7 @@ window.onload = function () {
   }
 
   if (projectTypewriter) {
-    typeWriterEffect(projectTypewriter, ["Proyek yang telah saya kerjakan"]);
+    typeWriterEffect(projectTypewriter, ["Beberapa proyek yang telah saya kerjakan"]);
   }
 
   if (contactTypewriter) {
