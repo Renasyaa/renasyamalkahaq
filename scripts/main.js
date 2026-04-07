@@ -52,23 +52,23 @@ window.onload = function () {
   const contactTypewriter = document.querySelector("#contact-typewriter");
 
   if (homeTypewriter) {
-    typeWriterEffect(homeTypewriter, ["IT Student"]);
+    typeWriterEffect(homeTypewriter, ["Informatika"]);
   }
 
   if (aboutTypewriter) {
-    typeWriterEffect(aboutTypewriter, ["Find out more about me"]);
+    typeWriterEffect(aboutTypewriter, ["Temukan lebih banyak tentang saya"]);
   }
 
   if (certificationTypewriter) {
-    typeWriterEffect(certificationTypewriter, ["Certificates I have obtained"]);
+    typeWriterEffect(certificationTypewriter, ["Sertifikat yang telah saya peroleh"]);
   }
 
   if (projectTypewriter) {
-    typeWriterEffect(projectTypewriter, ["Projects that I have worked on"]);
+    typeWriterEffect(projectTypewriter, ["Proyek yang telah saya kerjakan"]);
   }
 
   if (contactTypewriter) {
-    typeWriterEffect(contactTypewriter, ["Feel free to contact me"]);
+    typeWriterEffect(contactTypewriter, ["Jangan ragu untuk menghubungi saya"]);
   }
 };
 
