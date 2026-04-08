@@ -171,7 +171,23 @@
     <script>
         AOS.init();
     </script>
+    <script src="scripts/main.js"></script>
     <script>
+function showNotification(message, type) {
+    const notification = document.getElementById("notification");
+    const notificationMessage = document.getElementById("notificationMessage");
+
+    notificationMessage.innerText = message;
+
+    notification.classList.remove("hidden", "success", "error");
+    notification.classList.add(type, "show");
+
+    setTimeout(() => {
+        notification.classList.remove("show");
+    }, 3000);
+}
+</script>
+<script>
 document.getElementById("contactForm").addEventListener("submit", async function(e) {
     e.preventDefault();
 
@@ -193,11 +209,10 @@ document.getElementById("contactForm").addEventListener("submit", async function
             showNotification("Gagal mengirim pesan 😢", "error");
         }
     } catch (error) {
-        showNotification("Terjadi kesalahan. Coba lagi!", "error");
+        showNotification("Terjadi kesalahan!", "error");
     }
 });
 </script>
-    <script src="scripts/main.js"></script>
     <!-- <script src="scripts/contact.js"></script> -->
 </body>
 
