@@ -79,25 +79,37 @@
                 <!-- Contact Form -->
                 <div class="contact-form" data-aos="fade-left">
                     <h3>Kirim Pesan</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nama Anda</label>
-                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Anda</label>
-                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Nomor Telepon Anda</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Pesan Anda</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Ketik pesan Anda di sini"></textarea>
-                        </div>
-                        <button type="submit" class="send-btn">Kirim Pesan</button>
-                    </form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- ACCESS KEY -->
+    <input type="hidden" name="access_key" value="03146714-7ba7-49b4-982b-18b90582ee74">
+
+    <!-- tambahan -->
+    <input type="hidden" name="subject" value="Pesan dari Portfolio Renasya">
+    <input type="checkbox" name="botcheck" style="display:none;">
+
+    <div class="form-group">
+        <label for="name">Nama Anda</label>
+        <input type="text" name="name" placeholder="Masukkan nama Anda" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Anda</label>
+        <input type="email" name="email" placeholder="Masukkan email Anda" required>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Nomor Telepon Anda</label>
+        <input type="tel" name="phone" placeholder="Masukkan nomor telepon Anda">
+    </div>
+
+    <div class="form-group">
+        <label for="message">Pesan Anda</label>
+        <textarea name="message" rows="5" placeholder="Ketik pesan Anda di sini" required></textarea>
+    </div>
+
+    <button type="submit" class="send-btn">Kirim Pesan</button>
+</form>
                     <p id="responseMessage"></p>
                 </div>
             </div>
@@ -159,7 +171,7 @@
         AOS.init();
     </script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/contact.js"></script>
+    <!-- <script src="scripts/contact.js"></script> -->
 </body>
 
 </html>
