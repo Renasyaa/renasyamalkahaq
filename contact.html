@@ -208,10 +208,10 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(result); // DEBUG
 
             if (result.success) {
-                showNotification("Pesan berhasil dikirim! 🎉", "success");
+                showNotification("Pesan berhasil dikirim!", "success");
                 form.reset();
             } else {
-                showNotification("Gagal mengirim pesan 😢", "error");
+                showNotification("Gagal mengirim pesan", "error");
             }
         } catch (error) {
             showNotification("Terjadi kesalahan!", "error");

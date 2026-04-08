@@ -596,7 +596,7 @@ main {
 
 .skill h2 {
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -630,6 +630,79 @@ main {
         width: calc(50% - 1rem);
     }
 }
+
+/* Tools */
+
+.tools {
+    margin-top: 4rem;
+}
+
+.tools h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tools p.subtitle {
+    text-align: center;
+    color: #fafafa;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.tools {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* BOX BESAR 🔥 */
+.tools-box {
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* GRID DALAM BOX */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    justify-items: center;
+}
+
+/* ITEM */
+.tool {
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tool img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.tool p {
+    font-size: 14px;
+    color: white;
+}
+
+/* HOVER */
+.tool:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+
+
+
+
 /* REASON COMPONENT */
 .reason {
     width: 100%;
